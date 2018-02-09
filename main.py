@@ -9,4 +9,4 @@ with open('installation.csv', newline='') as csvfile:
             tab2.append(attribut)
         tab.append(tab2)
 
-print(tab)
+print(tab)dddd
