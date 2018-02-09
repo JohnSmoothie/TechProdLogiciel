@@ -6,4 +6,4 @@ with open('installation.csv', newline='') as csvfile:
     for row in spamreader:
         tab.append(row)
 
-print(tab)
+print(tab)dddd
