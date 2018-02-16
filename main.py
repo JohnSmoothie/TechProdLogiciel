@@ -7,6 +7,10 @@ with open('installation.csv', newline='') as csvfile:
     for row in spamreader:
         tab.append(row)
 
-print(tab[2])
+
+for col in tab[1] :
+    print(col)
+tabfin = []
+cmp = 0
 
 #utiliser sqlite pour les bd
