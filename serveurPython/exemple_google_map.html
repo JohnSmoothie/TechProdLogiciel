@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="map" style="width:400px;height:400px">
+    emplacement de la map
+</div>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(47.652348, -1.791225);
+  var pos2 = new google.maps.LatLng(47.652342, -1.791226);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 7.5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  var marker2 = new google.maps.Marker({position: pos2});
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT_0ziGJUx6ueoPO1n0FxEjADpFgHH2po&callback=myMap"></script>
+
+</body>
+</html>
